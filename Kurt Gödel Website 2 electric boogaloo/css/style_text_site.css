@@ -1,0 +1,152 @@
+body {
+    font-size: larger;
+    color: var(--white);
+    margin: 0px;
+}
+
+section {
+    min-height: 40vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+h1 {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 45px;
+    text-align: center;
+}
+
+p {
+    margin: 8px;
+}
+
+table {
+    border: 1px solid var(--white);
+    width: 30vw;
+    border-collapse: collapse;
+    height: 50vh;
+    align-self: center;
+}
+
+td, th{
+    border:  1px solid var(--white);
+    text-align: center;
+}
+
+/*Navigationbar*/
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+
+/*An extra div for the arrows so they don't overlap with the text/seperators*/
+.arrowspace {
+    min-height: 50px;
+}
+
+.arrow {
+    margin-top: 50px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    align-self: center;
+    cursor: pointer;
+    /*position*/
+    position: absolute;
+    right: 50%;
+}
+
+.arrowup {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrowdown {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.textblock {
+    margin-top: 25px;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    text-align: justify;
+    text-justify: inter-word;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+/*Thin seperators*/
+
+/*
+#text_seperator1 {
+    background-image: url(/svg/thin_text_site_seperator_1.svg);
+}
+#text_seperator2 {
+    background-image: url(/svg/thin_text_site_seperator_2.svg);
+}
+#text_seperator3 {
+    background-image: url(/svg/thin_text_site_seperator_3.svg);
+}
+#text_seperator3 {
+    background-image: url(/svg/thin_text_site_seperator_4.svg);
+}
+*/
+
+/*Thick seperators*/
+#text_seperator1 {
+    background-image: url(/svg/thick_text_site_seperator_1.svg);
+}
+#text_seperator2 {
+    background-image: url(/svg/thick_text_site_seperator_2.svg);
+}
+#text_seperator3 {
+    background-image: url(/svg/thick_text_site_seperator_3.svg);
+}
+#text_seperator4 {
+    background-image: url(/svg/thick_text_site_seperator_4.svg);
+}
+
+/*Empty divs the scrollbuttons jump to*/
+#jumpspot1{
+    position: absolute;
+    height: 56vw;
+}
+#jumpspot2{
+    position: absolute;
+    height: 45vw;
+}
+#jumpspot3{
+    position: absolute;
+    height: 44vw;
+}
+#jumpspot4{
+    position: absolute;
+    height: 44vw;
+}

@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Raleway;
+    src: url(/fonts/Raleway-Medium.ttf);
+}
+
+* {
+    font-family: Raleway;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--accent);
+}
+
+/*Makes it easy to change the colors*/
+:root {
+    --primary: #1d3557;
+    --secondary: #457b9d;
+    --tertiary: #a8dadc;
+    --accent: #e63946;
+
+    --white: #f1faee;
+    --black: #1e1f22;
+    --gray: #404756;
+}
+
+.dominant {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+.tertiary {
+    background-color: var(--tertiary);
+}
+
+.accent {
+    background-color: var(--accent);
+}
+
+
+/*Button presets*/
+.btn1 button {
+    padding: 7px 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--red);
+    background: transparent;
+    background: linear-gradient(var(--accent), #ff0015);
+    box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+    color: var(--white);
+}
+
+.btn2 button {
+    padding: 7px 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--white);
+    transition: all 0.2s ease 0s;
+}
+
+.btn2 button:hover {
+    background: var(--accent);
+}
+
+
+/*Seperator presets*/
+.seperator {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.seperator1{
+    aspect-ratio: 960/300;
+}
+
+.seperator2{
+    aspect-ratio: 960/150;
+}

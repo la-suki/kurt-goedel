@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style_text_site.css">
+    <link rel="shortcut icon" type="image/png" href="/img/icon.png">
+    <script src="script.js"></script>
+    <title>Kurt Gödel</title>
+</head>
+<body>
+
+    <header>
+        <a class="btn1" href="index.html"><button>Zurück</button></a>
+        <nav> 
+            <ul>   
+                <li class="btn2"><button onclick="scrolldown('jumpspot1')">Vor Gödel</button></li>
+                <li class="btn2"><button onclick="scrolldown('jumpspot2')">Was hat nun also Gödel damit zu tun?</button></li>
+                <li class="btn2"><button onclick="scrolldown('jumpspot3')">Gödels Zahlensystem</button></li>
+                <li class="btn2"><button onclick="scrolldown('jumpspot4')">Der Gödelsche Unvollständigkeitssatz</button></li>
+            </ul>
+        </nav>
+        <a class="btn1" href="sources.html"><button>Quellen</button></a>
+    </header>
+
+    <div id="jumpspot1"></div>
+
+    <section class="dominant">
+        
+        <div class="textblock">
+            <h1>Vor Gödel</h1>
+            <p>Um zu verstehen, was Gödel geleistet hat, muss man sich erst einmal zwei andere wichtige Mathematiker anschauen: Georg Cantor, Erfinder der Mengenlehre und David Hilbert, einer der bekanntesten und anerkantesten Mathematiker seiner Zeit.</p>
+            <p>Fangen wir mit Cantor an; In den 1870ern erschuf er die Mengenlehre, er selbst bezog sich dabei in erster Linie auf Zahlenmengen (die natürlichen Zahlen, die ganzen Zahlen, die reellen Zahlen u.s.w.), wobei sich Mengen von praktisch allem bilden lassen: Zum Beispiel bilden alle Menschen der Welt  eine Menge, aber auch alle Universitäten. Es gibt die leere Menge, die nichts enthält, aber auch eine Menge die alles enthält.</p>
+            <p>Cantor wunderte sich, ob es mehr reelle Zahlen zwischen 0 und 1 oder mehr natürliche Zahlen gibt. Sein erster Gedanke war natürlich, dass es von beiden unendlich gibt, also sind beide Mengen auch gleich groß. Cantor hatte allerdings eine Idee: Er bewies durch das sogenannte Diagonalargument dass es mehr reelle als natürliche Zahlen gibt.</p>
+            <p>Die Idee, dass es größere und kleinere Unendlichkeiten gibt, spaltete die mathematische Welt in zwei Gruppen: die sogenannten Intuitionisten, die glaubten, dass Cantors Arbeit Nonsens und die Mathematik eine pure Kreation des menschlichen Gehirns sei, und auf der anderen Seite die Formalisten, die daran glaubten, dass alles in der Mathematik sich durch logische Fundamente erklären lässt. Der faktische Anführer der Formalisten war der zuvor erwähnte David Hilbert. Hilbert war zu der Zeit eine lebende Legende, war sehr anerkannt und arbeitete in nahezu jedem Bereich der Mathematik. Er war davon überzeugt, dass Cantors Arbeit revolutionär war.</p>
+            <p>Doch die Mengenlehre hat einen großes Problem: ihre Selbstreferenz. Ein Beispiel dafür ist das Barbier-Paradox:</p>
+            <p>In einer Stadt, die nur aus bärtigen Männern besteht, gibt es einen einzigen Barbier, der allen den Bart rasiert, die sich nicht selbst rasieren. Wer rasiert nun also dem Barbier den Bart? Wenn er ihn sich selbst rasierte, gehörte er zu den Männern, die ihn sich selbst rasieren und dürfte ihn somit als Barbier eigentlich nicht rasieren.</p>
+            <p>Das ist das Problem der Selbstreferenz, das ”behoben” wurde, indem man definierte, dass eine Menge sich nicht selbst beinhalten darf. Allerdings wurde später erkannt, dass dadurch das Problem nicht ganz aufgehoben wird.</p>
+        </div>
+
+    </section>
+
+    <div class="arrowspace dominant">
+        <div onclick="scrolldown('jumpspot2')" class="arrow arrowdown"></div>
+    </div>
+    <div class="seperator seperator1" id="text_seperator1"></div>
+
+    <div id="jumpspot2"></div>
+
+    <section class="dominant">
+
+        <div class="textblock">
+            <h1>Was hat nun also Gödel damit zu tun?</h1>
+            <p>1930 hielt Hilbert einen Radiovortrag über seine drei Fragen der Mathematik, die nach den zuvor beschriebenen Ereignissen entstanden waren:</p>
+            <ol>
+                <li>Ist die Mathematik komplett? In anderen Worten: Ist es möglich, jede wahre Aussage zu beweisen?</li>
+                <li>Ist die Mathematik konsistent? Gibt also keine Widersprüche?</li>
+                <li>Ist die Mathematik entscheidbar? Gibt es also einen Algorithmus, der anhand der Axiome immer entscheiden kann, ob etwas wahr oder falsch ist?</li>
+            </ol>
+            <p>Nach Hilberts Meinung war die Antwort auf alle drei Fragen “ja”. Sein Vortrag war monumental und er beendete ihn mit den Worten „Wir müssen wissen, wir werden wissen!“.</p>
+            <p>Doch noch am Abend davor erklärte Kurt Gödel, dass er die Antwort auf die erste der drei Fragen gefunden habe, und die Antwort “nein” laute. Zu dieser Zeit hatte ihm kaum jemand Aufmerksamkeit geschenkt, die einzige Person war John von Neuman, der ein paar Fragen stellte. Doch im folgenden Jahr veröffentlichte Gödel seinen ”Unvollständigkeitssatz”, und alle, einschließend Hilbert, wurden darauf aufmerksam.</p>
+        </div>
+
+    </section>
+
+    <div class="arrowspace dominant">
+        <div onclick="scrolldown('jumpspot3')" class="arrow arrowdown"></div>
+    </div>
+    <div class="seperator seperator1" id="text_seperator2"></div>
+
+    <div id="jumpspot3"></div>
+
+    <section class="dominant">
+      
+        <div class="textblock">
+            <h1>Gödels Zahlensystem</h1>
+            <p>Gödel hat jedem Zeichen des mathematischen Logik-Systems (also ~ für nicht, v für oder, -> für Schlussfolgerung u.s.w.) eine Zahl zugewiesen: dem Nicht-Symbol 1, dem Oder-Symbol 2 und so weiter und sofort. Diese Zahlen werden Gödelzahlen genannt. Die Zahl Null bekommt ihre eigene Gödelzahl, die 6, und um jede andere Zahl darzustellen benutzt man das ”Nachfolger von”-Symbol. Um die 1 darzustellen, nimmt man also den Nachfolger von Null, wenn man die Zwei darstellen möchte, nimmt man den Nachfolger des Nachfolgers von Null.</p>
+            <br>
+            <table>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Gödel-Zahl</th>
+                    <th>Bedeutung</th>
+                </tr>
+                <tr>
+                    <td>~</td>
+                    <td>1</td>
+                    <td>nicht</td>
+                </tr>
+                <tr>
+                    <td>v</td>
+                    <td>2</td>
+                    <td>oder</td>
+                </tr>
+                <tr>
+                    <td>⊃</td>
+                    <td>3</td>
+                    <td>wenn...dann...</td>
+                </tr>
+                <tr>
+                    <td>∃</td>
+                    <td>4</td>
+                    <td>es existiert</td>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>5</td>
+                    <td>gleich</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>null</td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>7</td>
+                    <td>der Nachfolger von</td>
+                </tr>
+                <tr>
+                    <td>(</td>
+                    <td>8</td>
+                    <td>offene Klammer</td>
+                </tr>
+                <tr>
+                    <td>)</td>
+                    <td>9</td>
+                    <td>geschlossene Klammer</td>
+                </tr>
+                <tr>
+                    <td>,</td>
+                    <td>10</td>
+                    <td>Komma</td>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>11</td>
+                    <td>plus</td>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>12</td>
+                    <td>mal</td>
+                </tr>
+                <tr>
+                    <td = colspan = "3">Daraufhin folgen Buchstaben die representieren Variablen (x, y, z, ...), die wiederrum Primzahlen größer als 12 zugewiesen werden (13, 17, 19, ...).</td>
+                </tr>
+            </table>
+            <br>
+            <p>Nun kann man jede logische oder mathematische Aussage mit einer einzelnen Zahl darstellen, indem man jeder der einzelnen Gödelzahlen der Aussage als Exponent von Primzahlen darstellt.</p>
+            <p>Wenn man also 0 = 0 darstellen möchte, braucht man die Gödelzahlen für Null und das Gleich-Symbol, diese lauten 6 und 5. Nun nimmt man sie als Exponenten der Primzahlen, beginnend von 2.</p>
+            <p>2⁶ × 3⁵ × 5⁶, also 243.000.000</p>
+            <p>Diese Zahl kann man durch Primfaktorzerlegung immer auf ihre originalen Gödelzahlen und damit auch auf die ursprüngliche Aussage zurückführen.</p>
+            <p>Man kann nun aber auch Axiome darstellen, zum Beispiel:</p>
+            <p>~(sx = 0)</p>
+            <p>Was wörtlich bedeutet „Der Nachfolger von x ist nicht 0“, was sinnvoll ist, da es in Gödels System keine negativen Zahlen gibt.</p>
+            <p>Nun kann man für x 0 einsetzen:</p>
+            <p>~(s0 = 0)</p>
+            <p>Was wörtlich bedeutet: „Der Nachfolger von 0 (also 1) ist nicht 0“. Das ist der Beweis, dass 1 nicht 0 ist.</p>
+            <p>Man kann nun auch diese zwei Axiome, die beide ihre eigenen Gödelzahlen haben, als Potenzen für die Primzahlen benutzen und erhält somit eine neue Zahl, die für den Beweis „1 ist nicht 0“ steht. Diese Zahl ist unglaublich groß - wenn man sie komplett ausschreiben würde, hätte sie 73 Million Ziffern, weswegen man diese Zahlen auch einfach als Buchstaben benennen kann. Man kann also z.B. sagen: Der Beweis, dass 1 nicht 0 ist, ist die Gödelzahl a.</p>
+        </div>
+
+    </section>
+
+    <div class="arrowspace dominant">
+        <div onclick="scrolldown('jumpspot4')" class="arrow arrowdown"></div>
+    </div>
+    <div class="seperator seperator1" id="text_seperator3"></div>
+
+    <div id="jumpspot4"></div>
+
+    <section class="dominant">
+
+        <div class="textblock">
+            <h1>Der Gödelsche Unvollständigkeitssatz</h1>
+            <p>All das hat Gödel sich für eine bestimmte Gödelzahl ausgedacht:</p>
+            <p>~ ∃x(Dem(ySub(17,y)))</p>
+            <p>Was wörtlich bedeutet: „Es gibt keinen Beweis für die Gödelzahl g“. Der Trick dabei ist, dass die Aussage selbst die Gödelzahl g ist.</p>
+            <p>Was die Zahl g also aussagt, ist, dass sie selbst nicht beweisbar ist.</p>
+            <p>Wenn diese Aussage nicht stimmte, und es eine Gödelzahl gäbe, die diese Aussage beweist, entstünde ein Widerspruch, was Gilberts zweiter Aussage widerspräche. Wenn diese allerdings stimmte, gäbe es ein mathematisches System, in dem es Aussagen gibt, die man nicht beweisen kann, was Gilberts erster Aussage widerspräche.</p>
+            <p>In jedem Fall hatte Gilbert unrecht.</p>
+        </div>
+
+    </section>
+
+    <div class="arrowspace dominant">
+        <div onclick="scrolldown('jumpspot1')" class="arrow arrowup"></div>
+    </div>
+    <div class="seperator seperator1" id="text_seperator4"></div>
+</body>
+</html>
